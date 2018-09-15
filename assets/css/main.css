@@ -1,0 +1,56 @@
+body,
+html {
+    height: 100%;
+}
+
+#logo {
+    width: 70px;
+}
+
+.navbar {
+    background-color: #e3f2fd;
+}
+
+.carousel {
+    margin-top: 80px;
+}
+
+.carousel img {
+    width: 100%;
+    filter: brightness(70%);
+}
+
+.side-menu-icons {
+    font-size: 40px;
+    text-align: center;
+}
+
+.side-menu-text {
+    text-align: center;
+}
+
+.side-menu-card {
+    margin-bottom: 30px;
+}
+
+.lesson {
+    background: #E1F3FC;
+}
+
+.content {
+    margin-top: 140px;
+    /* height:700px; */
+}
+
+.lesson:hover {
+    background: rgb(181, 194, 201);
+    cursor: pointer;
+}
+
+.findLesson {
+    margin-top: 90px;
+}
+
+i {
+    font-size: 30px;
+}
