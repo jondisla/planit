@@ -25,7 +25,7 @@ include ("functions.php");
                 <div class="carousel-caption">
                     <h1>Welcome</h1>
                     <p class="lead">  This is an effort led by a principal who loves to share her many years of lesson planning.  By making the lesson planning easier you can spend time on the most important aspects of your lesson.  Browse the vast content made available by a community of teachers and other professionals.  </p>
-                    <a class="btn btn-success" href="#">Learn more</a>
+                    <!-- <a class="btn btn-success" href="#">Learn more</a> -->
                 </div>
             </div>
             <div class="carousel-item">
@@ -33,7 +33,7 @@ include ("functions.php");
                 <div class="carousel-caption">
                     <h1>Work Together</h1>
                     <p class="lead">On PlanIt<span style="font-size:15px;">&copy;</span> you will find some great resrouces for lesson plans.There is also a community of countless teachers who collaborate to bring their creativeness to other class rooms.  Collaborate with other teachers by susbmitting your own lesson plan and allowing others to add their input.</p>
-                    <a class="btn btn-success" href="#">Collaborate</a>
+                    <!-- <a class="btn btn-success" href="#">Collaborate</a> -->
                 </div>
             </div>
             <div class="carousel-item">
@@ -41,7 +41,7 @@ include ("functions.php");
                 <div class="carousel-caption">
                     <h1>Connect Across the World</h1>
                     <p class="lead">Connect with other teachers on the forums</p>
-                    <a class="btn btn-success" href="#">Enter Forum</a>
+                    <!-- <a class="btn btn-success" href="#">Enter Forum</a> -->
                 </div>
             </div>
         </div>
