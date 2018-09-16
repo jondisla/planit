@@ -14,7 +14,7 @@ if(isset($_POST['submit_plan'])){
     $content_text = mysqli_real_escape_string($connection, $_POST['content_text']);
     $type = mysqli_real_escape_string($connection, $_POST['type']);
 
-    $connection = mysqli_connect('localhost', 'root', 'root', 'planit');
+    $connection = mysqli_connect('us-cdbr-iron-east-01.cleardb.net', 'b186ee9f845e68', '4b9feda0', 'heroku_5127e81f159d979');
     if(!$connection){
         die("DB connection failed");
     }
