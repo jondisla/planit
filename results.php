@@ -3,19 +3,13 @@ include ("functions.php");
 ?>
 <?php include ("nav.php");?>
 <?php include ("head.php");
-
-if(isset($_POST['delete'])){
-    // mysqli_query($connection, "DELETE FROM lessons WHERE id=";
-}
-if(isset($_POST['find_lesson_btn'])){
-
-    $subject = ($_POST['subject']);
-    $grade = ($_POST['grade']);
-    $type = ($_POST['type']);
-}
 ?>
 
 <style>
+    body{
+        height:100%;
+    }
+
     .findLesson{
         margin-top:80px;
         background: #E1F3FC;
@@ -27,6 +21,9 @@ if(isset($_POST['find_lesson_btn'])){
     #loading{
         height:100%;
         display:none;
+    }
+    .results{
+        height:100%;
     }
 
 </style>
@@ -63,34 +60,10 @@ if(isset($_POST['find_lesson_btn'])){
         </div>
         <form>
         </div>
-        <div class="row" id = "latestSubs">
-            <div class="col-lg-12">
-                <center><h2>Latest Submissions</h2></center>
-                <?php showLatestLessons();?>
-            </div>
         </div>
-    </div>
-</div>
-</div>
-
-<h1 id = "loading"><center>Searching<br><i class="fa fa-circle-o-notch fa-spin"></i></center></h1>
-
+        <div class = "results"><?php
+            searchLesson();
+            ?>
+        </div>
 
 <?php include ("footer.php")?>
-
-<script>
-$(document).ready(function () {
-    console.log("ready!");
-
-    $('#form').click(() => {
-        $('#latestSubs').hide();
-        $('#loading').show();
-    })
-
-    $('#loading, #latestSubs').click(() => {
-        $('#latestSubs').show();
-        $('#loading').hide();
-    })
-});
-
-</script>

@@ -70,7 +70,7 @@ function showBlogs(){
     }
 }
 
-function showLessons(){
+function showLatestLessons(){
     global $connection;
     $query = "SELECT * FROM lessons ORDER BY ID DESC LIMIT 5";
     $result = mysqli_query($connection, $query);
@@ -80,6 +80,7 @@ function showLessons(){
     }
 
     while($row = mysqli_fetch_assoc($result)){
+        $id = $row['id'];
         $name = $row['name'];
         $grade = $row['grade'];
         $subject = $row['subject'];
@@ -97,14 +98,14 @@ function showLessons(){
             <blockquote class="blockquote"><h3>'.$name.'</h3><p class = "shortParagraph">'.$postShort.'...</p>
         <footer class="card-blockquote"><cite title="Source title"> '.$type.' for '.$subject.' '.$grade.' grade</footer>
         </blockquote>
-        <a name="" id="" class="btn btn-success" href="#" role="button">Read More</a></div></div><br>';
+        <button name = "more" class="btn btn-success" href="#" role="button">Read More</button><input type="submit" name = "delete" class="btn btn-danger" href="'.$id .'" role="button" value="Delete"></button></div></div><br>';
     }
 }
 // '. $author .'</cite>
 
 function showOneLesson(){
     global $connection;
-    $query = 'SELECT * FROM `lessons` WHERE `id` = ' . (int) $_GET['id'];
+    $query = 'SELECT * FROM lessons WHERE id = ' . (int) $_GET['id'];
     $result = mysqli_query($connection, $query);
 
     if(!$result){
@@ -128,5 +129,42 @@ function showOneLesson(){
         <a name="" id="" class="btn btn-success" href="fullLesson.php?id='.$id.'" role="button">Read More</a></div></div><br>';
     }
 }
+
+function searchLesson(){
+    global $connection;
+    $subject = ($_POST['subject']);
+    $grade = ($_POST['grade']);
+    $type = ($_POST['type']);
+    
+    $query = "SELECT * FROM lessons WHERE subject='$subject' and grade='$grade' and type='$type'";
+
+    $result = mysqli_query($connection, $query);
+        if(!$result){
+            die('Query Failed' . mysqli_error());
+        }else{
+            echo "";
+        }
+    $num_rows = mysqli_num_rows($result);
+        while($row = mysqli_fetch_assoc($result)){
+            $id = $row['id'];
+            $name = $row['name'];
+            $grade = $row['grade'];
+            $subject = $row['subject'];
+            $content_text = $row['content_text'];
+            $content_file = $row['content_file'];
+    
+            //shorten the paragraph
+        $position=250; // Define how many character you want to display.
+        $message=$content_text; 
+        $postShort = substr($message, 0, $position);
+
+            echo '<center>' . $num_rows . ' Result(s) found</center><div class="content container card blogpost">
+        <div class="card-body">
+            <blockquote class="blockquote"><h3>'.$name.'</h3><p class = "shortParagraph">'.$postShort.'...</p>
+        <footer class="card-blockquote"><cite title="Source title"> '.$type.' for '.$subject.' '.$grade.' grade</footer>
+        </blockquote>
+        <button name = "more" class="btn btn-success" href="#" role="button">Read More</button><input type="submit" name = "delete" class="btn btn-danger" href="'.$id .'" role="button" value="Delete"></button></div></div><br>';
+        }
+    }
 
 ?>

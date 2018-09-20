@@ -2,8 +2,7 @@
     #stickyFooter{
         position:relative;
         bottom:0;
-        width:100%;
-        height:70px;   
+        width:100%;  
         background:#E33B37;
     }
 </style>

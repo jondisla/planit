@@ -2,7 +2,7 @@
 
 <nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: #e3f2fd;">
 
-    <a class="navbar-brand" href="index.php"><img id="logo" src="assets/img/teachlogo.png"></a>
+    <a class="navbar-brand" href="home.php"><img id="logo" src="assets/img/teachlogo.png"></a>
 
     <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
         aria-expanded="false" aria-label="Toggle navigation"></button>
@@ -27,9 +27,9 @@
 
         </ul>
 
-        <form class="form-inline my-2 my-lg-0">
+        <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        </form> -->
     </div>
 </nav>
