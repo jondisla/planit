@@ -25,7 +25,7 @@ include ("functions.php");
                 <div class="carousel-caption">
                     <h1>Welcome</h1>
                     <p class="lead">  This is an effort led by a principal who loves to share her many years of lesson planning.  By making the lesson planning easier you can spend time on the most important aspects of your lesson.  Browse the vast content made available by a community of teachers and other professionals.  </p>
-                    <!-- <a class="btn btn-success" href="#">Learn more</a> -->
+                    
                 </div>
             </div>
             <div class="carousel-item">

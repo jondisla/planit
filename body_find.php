@@ -5,7 +5,8 @@ include ("functions.php");
 <?php include ("head.php");
 
 if(isset($_POST['delete'])){
-    // mysqli_query($connection, "DELETE FROM lessons WHERE id=";
+
+    delete();
 }
 if(isset($_POST['find_lesson_btn'])){
 
@@ -61,7 +62,7 @@ if(isset($_POST['find_lesson_btn'])){
             <input type="submit" class="btn btn-success" value ="Search" name = "find_lesson_btn">
             </div>
         </div>
-        <form>
+        </form>
         </div>
         <div class="row" id = "latestSubs">
             <div class="col-lg-12">

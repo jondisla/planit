@@ -1,10 +1,10 @@
-
-
 <?php
 include ("functions.php");
 ?>
 <?php include ("nav.php");
-    include ("body_find.php");
+    include ("head.php");
+
+    $id = $_GET['id'];
 ?>
 
 <style>
@@ -27,7 +27,7 @@ include ("functions.php");
 <div class="row">
     <div class="col-lg-12">
         <center><h2>Latest Submissions</h2></center>
-        <?php searchLesson() ?>
+        <?php showOneLesson() ?>
     </div>
 </div>
 </div>
