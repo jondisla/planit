@@ -65,5 +65,7 @@ include ("functions.php");
             searchLesson();
             ?>
         </div>
+        </div>
+        </div>
 
 <?php include ("footer.php")?>
