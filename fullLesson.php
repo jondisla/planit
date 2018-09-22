@@ -4,7 +4,6 @@ include ("functions.php");
 <?php include ("nav.php");
     include ("head.php");
 
-    $id = $_GET['id'];
 ?>
 
 <style>
@@ -18,20 +17,37 @@ include ("functions.php");
     }
 
     .content{
-            margin-top:540px;
+            margin-top:80px;
             /* height:700px; */
         }
+        @media print {
+        body .card-body a {
+          display:none;
+        }
+        body .card-body{
+            border-radius:0px;
+        }
+
+        body .card-body {
+          display:block;
+        }
+      }
 
 </style>
 <div class="content">
-<div class="row">
-    <div class="col-lg-12">
-        <center><h2>Latest Submissions</h2></center>
         <?php showOneLesson() ?>
     </div>
 </div>
 </div>
 </div>
 </div>
-
 <?php include ("footer.php")?>
+
+<script>
+function divPrint() {
+        // Some logic determines which div should be printed...
+        // This example uses div3.
+        $("#div3").addClass("printable");
+        window.print();
+      }
+</script>

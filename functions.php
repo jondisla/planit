@@ -99,7 +99,7 @@ function showLatestLessons(){
             <blockquote class="blockquote"><h3>'.$name.'<span style="float:right;font-size:15px;">'.$duration.' mins</span></h3><p class = "shortParagraph">'.$postShort.'...</p>
         <footer class="card-blockquote"><cite title="Source title"> '.$type.' for '.$subject.' '.$grade.' grade</footer>
         </blockquote>
-        <a class="btn btn-success" href="fullLesson.php?'.$id.'" role="button">Read More</a></div></div><br>';
+        <a class="btn btn-success" href="fullLesson.php/?id='.$id.'" role="button">Read More</a></div></div><br>';
     }
 }
 // '. $author .'</cite>
@@ -111,6 +111,7 @@ function searchLesson(){
     $subject = ($_POST['subject']);
     $grade = ($_POST['grade']);
     $type = ($_POST['type']);
+    
     
     $query = "SELECT * FROM lessons WHERE subject='$subject' and grade='$grade' and type='$type'";
 
@@ -129,6 +130,7 @@ function searchLesson(){
             $subject = $row['subject'];
             $content_text = $row['content_text'];
             $content_file = $row['content_file'];
+            $duration = $row['duration'];
             
             //shorten the paragraph
         $position=250; // Define how many character you want to display.
@@ -137,10 +139,10 @@ function searchLesson(){
 
             echo '<div class="container card blogpost">
         <div class="card-body">
-            <blockquote class="blockquote"><h3>'.$name.'</h3><p class = "shortParagraph">'.$postShort.'...</p>
+            <blockquote class="blockquote"><h3>'.$name.'<span style="float:right;font-size:15px;">'.$duration.' mins</span></h3><p class = "shortParagraph">'.$postShort.'...</p>
         <footer class="card-blockquote"><cite title="Source title"> '.$type.' for '.$subject.' '.$grade.' grade</footer>
         </blockquote>
-        <button name = "more" class="btn btn-success" href="#" role="button">Read More</button>';
+        <a name="" id="" class="btn btn-success" href="fullLesson.php/?id='.$id.'" role="button">Read More</a></div></div><br>';
         }
     }
 
@@ -160,12 +162,14 @@ function showOneLesson(){
         $content_text = $row['content_text'];
         $content_file = $row['content_file'];
         $type = $row['type'];
-        echo '<div class="container card blogpost">
+        $duration = $row['duration'];
+
+        echo '<div class="container card blogpost" id="div3">
         <div class="card-body">
-            <blockquote class="blockquote"><h3>'.$name.'</h3><p class = "shortParagraph">'.$content_text.'...</p>
+            <blockquote class="blockquote"><h3>'.$name.'<span style="float:right;font-size:15px;">'.$duration.' mins</span></h3><p class = "shortParagraph">'.$content_text.'</p>
         <footer class="card-blockquote"><cite title="Source title"> '.$type.' for '.$subject.' '.$grade.' grade</footer>
         </blockquote>
-        <a name="" id="" class="btn btn-success" href="fullLesson.php?id='.$id.'" role="button">Read More</a></div></div><br>';
+        <a name=""  onclick="divPrint();" class="btn btn-success" href="" role="button">Print</a></div></div><br>';
     }
 }
 

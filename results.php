@@ -58,7 +58,7 @@ include ("functions.php");
             <input type="submit" class="btn btn-success" value ="Search" name = "find_lesson_btn">
             </div>
         </div>
-        <form>
+        </form>
         </div>
         </div>
         <div class = "results"><?php

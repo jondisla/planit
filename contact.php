@@ -17,8 +17,11 @@ if(isset($_POST['find_lesson_btn'])){
 ?>
 
 <style>
-    .card-body{
+    body{
         background: #E1F2FE;
+    }
+    .card-body{
+        background: #fdff9b;
     }
 
     .btn{
@@ -27,14 +30,21 @@ if(isset($_POST['find_lesson_btn'])){
     }
 
     .contactHead{
-        background: #F4001D;
+        background: #dfe08d;
+    }
+    .contactHead h3, i, p{
+        color:black;
     }
     .content{
         margin-top:140px;    
     }
     
     i{
-        color: #55B134;
+        color: grey;
+    }
+    .submitbutton{
+
+        width:30%; 
     }
     
 
@@ -44,17 +54,17 @@ if(isset($_POST['find_lesson_btn'])){
 <div class="content">
 <div class="container">
     <h2 class="text-center"></h2>
-	<div class="row justify-content-center">
-		<div class="col-12 col-md-8 col-lg-6 pb-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6 pb-5">
 
 
                     <!--Form with header-->
 
                     <form action="mail.php" method="post">
-                        <div class="card border-primary rounded-0">
+                        <div class="card  rounded-0">
                             <div class="card-header p-0">
                                 <div class="contactHead text-white text-center py-2">
-                                    <h3><i class="fa fa-envelope "style="color:white;"></i> Contact Us</h3>
+                                    <h3><i class="fa fa-envelope " ></i> Contact Us</h3>
                                     <p class="m-0">Ask us anything!</p>
                                 </div>
                             </div>
@@ -86,10 +96,15 @@ if(isset($_POST['find_lesson_btn'])){
                                         <textarea class="form-control" placeholder="Your message" required></textarea>
                                     </div>
                                 </div>
-
-                                <div class="text-center">
-                                    <input type="submit" value="Send" class="btn  btn-block rounded-0 py-2">
                                 </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                <div class="col-lg-4"></div>
+                                <div class="text-center submitbutton">
+                                    <input type="submit" value="Send" class="btn  btn-block rounded-0 py-3">
+                                    </div>
+                                    
                             </div>
 
                         </div>
@@ -98,7 +113,7 @@ if(isset($_POST['find_lesson_btn'])){
 
 
                 </div>
-	</div>
+    </div>
 </div>
 <div style="position:fixed;bottom:0;width:100%;">
 <?php include ("footer.php")?>

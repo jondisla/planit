@@ -1,6 +1,6 @@
 <?include "head.php" ?>
 
-<nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: #e3f2fd;">
+<nav class="navbar fixed-top navbar-expand-md navbar-light" style="background-color: #e3f2fd;border-bottom:1px solid #cecece;">
 
     <a class="navbar-brand" href="index.php"><img id="logo" src="assets/img/teachlogo.png"></a>
 
