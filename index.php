@@ -97,8 +97,8 @@ include ("functions.php");
                     </blockquote>
                     <!-- <div class="row">
                         <div class="col-lg-8"> -->
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique est consectetur, suscipit illum veritatis eos molestias ut ad esse harum nobis quibusdam, repellendus incidunt fugit sit totam sunt temporibus eum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eum nisi exercitationem commodi mollitia possimus beatae atque tempore modi excepturi dolore, ullam officia ipsam laboriosam velit repudiandae consequatur perspiciatis sapiente.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique est consectetur, suscipit illum veritatis eos molestias ut ad esse harum nobis quibusdam, repellendus incidunt fugit sit totam sunt temporibus eum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eum nisi exercitationem commodi mollitia possimus beatae atque tempore modi excepturi dolore, ullam officia ipsam laboriosam velit repudiandae consequatur perspiciatis sapiente.</p>
+                            <p>Planit was started by an elementary school principal that loves to help minds grow.  We have a passion for planning and find it rewarding to also help other teachers when planning their next lesson.  Within our lessons you will find great resources for tapping into our great young minds.  The lessons available cover courses .. to .. and content is constantly added.</p>
+                            <p>....</p>
                             <br>
                             Mrs. Daniela
                             <br>

@@ -17,11 +17,14 @@ if(isset($_POST['find_lesson_btn'])){
 ?>
 
 <style>
-    body{
+    body, html{
+        overflow-x: hidden; 
+    overflow-y: auto;
         background: #E1F2FE;
     }
     .card-body{
         background: #fdff9b;
+        height:330px;
     }
 
     .btn{
@@ -36,7 +39,7 @@ if(isset($_POST['find_lesson_btn'])){
         color:black;
     }
     .content{
-        margin-top:140px;    
+        margin-top:100px;    
     }
     
     i{
@@ -65,7 +68,6 @@ if(isset($_POST['find_lesson_btn'])){
                             <div class="card-header p-0">
                                 <div class="contactHead text-white text-center py-2">
                                     <h3><i class="fa fa-envelope " ></i> Contact Us</h3>
-                                    <p class="m-0">Ask us anything!</p>
                                 </div>
                             </div>
                             <div class="card-body p-3">
@@ -93,18 +95,12 @@ if(isset($_POST['find_lesson_btn'])){
                                         <div class="input-group-prepend">
                                             <div class="input-group-text"><i class="fa fa-comment "></i></div>
                                         </div>
-                                        <textarea class="form-control" placeholder="Your message" required></textarea>
+                                        <textarea rows="5" class="form-control" placeholder="Your message" required></textarea>
                                     </div>
-                                </div>
-                                </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                <div class="col-lg-4"></div>
-                                <div class="text-center submitbutton">
+                                <center><div class="text-center submitbutton">
                                     <input type="submit" value="Send" class="btn  btn-block rounded-0 py-3">
-                                    </div>
-                                    
+                                    </div></center>
+</div>
                             </div>
 
                         </div>

@@ -126,6 +126,7 @@ if(isset($_POST['submit_plan'])){
 
     <script type="text/javascript">
         $('.attach-btn').click(() => {
-        $('.attach').toggle();
+            // $('.attach').toggle();
+        console.log("");
     });
 </script>
