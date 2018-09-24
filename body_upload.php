@@ -53,7 +53,7 @@ if(isset($_POST['submit_plan'])){
            
             <div class="col-lg-12">
             <br>
-                <center><h1>Submit a Lesson Plan</h1></center>
+                <center><h1>Share your Creation</h1></center>
                 <hr>
             <form action = "body_upload.php" method = "POST">
                 <div class="row">

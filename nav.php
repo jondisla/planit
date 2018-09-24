@@ -4,8 +4,8 @@
 
     <a class="navbar-brand" href="index.php"><img id="logo" src="assets/img/teachlogo.png"></a>
 
-    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-        aria-expanded="false" aria-label="Toggle navigation"></button>
+    <button class="navbar-toggler hidden-lg-up" id="menuButton" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
 
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
