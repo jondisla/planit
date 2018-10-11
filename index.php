@@ -97,7 +97,14 @@ include ("functions.php");
                     </blockquote>
                     <!-- <div class="row">
                         <div class="col-lg-8"> -->
-                            <p>Planit was started by an elementary school principal that loves to help minds grow.  We have a passion for planning and find it rewarding to also help other teachers when planning their next lesson.  Within our lessons you will find great resources for tapping into our great young minds.  The lessons available cover courses .. to .. and content is constantly added.</p>
+                            <p>Planit was started** <?php
+                            function test($l, $k){
+                                $result = $l . $k;
+                                echo $result;
+                            }
+                            echo test('Jon', 'Disla');
+                                
+                            ?>**by an elementary school principal that loves to help minds grow.  We have a passion for planning and find it rewarding to also help other teachers when planning their next lesson.  Within our lessons you will find great resources for tapping into our great young minds.  The lessons available cover courses .. to .. and content is constantly added.</p>
                             <p>....</p>
                             <br>
                             Mrs. Daniela

@@ -165,7 +165,7 @@ function showOneLesson(){
         $duration = $row['duration'];
 
         echo '<div class="container card blogpost" id="div3">
-        <div class="card-body">
+        <div class="card-body" style = " margin-bottom:12%;">
             <blockquote class="blockquote"><h3>'.$name.'<span style="float:right;font-size:15px;">'.$duration.' mins</span></h3><p class = "shortParagraph">'.$content_text.'</p>
         <footer class="card-blockquote"><cite title="Source title"> '.$type.' for '.$subject.' '.$grade.' grade</footer>
         </blockquote>

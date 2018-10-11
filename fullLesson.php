@@ -18,7 +18,6 @@ include ("functions.php");
     h1, h2{
         font-size:20px;
     }
-
     .content{
             margin-top:130px;
             /* height:700px; */
@@ -29,10 +28,8 @@ include ("functions.php");
         }
         body .card-body{
             border-radius:0px;
-        }
-
-        body .card-body {
           display:block;
+         
         }
       }
 
