@@ -5,10 +5,26 @@ include ("functions.php");
 <?php include ("nav.php") ?>
     
 <style>
+        .content{
+            background: url("assets/img/b1.jpg") no-repeat center center ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:50%;
+        }
         a,
         a:hover{
             text-decoration:none;
             color:#363A3E;
+        }
+        p,
+        .content{
+            font-family: 'Mali', cursive;
+  
+        }
+        #danipic{
+            width:100px;
         }
     </style>
 
@@ -93,31 +109,16 @@ include ("functions.php");
                     <div class="col-lg-8" >
                     <div class="blogpost">
                     <div class="card-body">
-                        <blockquote class="blockquote"><h3>Welcome</h3>
+                        <blockquote class="blockquote"><h3>Bienvenidos</h3>
                     </blockquote>
-                    <!-- <div class="row">
-                        <div class="col-lg-8"> -->
-                            <p>Planit was started** <?php
-                            function test($l, $k){
-                                $result = $l . $k;
-                                echo $result;
-                            }
-                            echo test('Jon', 'Disla');
-                                
-                            ?>**by an elementary school principal that loves to help minds grow.  We have a passion for planning and find it rewarding to also help other teachers when planning their next lesson.  Within our lessons you will find great resources for tapping into our great young minds.  The lessons available cover courses .. to .. and content is constantly added.</p>
-                            <p>....</p>
+                    
+                    <img id = "danipic" src="assets/img/daniela.jpg" align="left" hspace = "20"><p>Planit was started by an elementary school principal that loves to help minds grow.  We have a passion for planning and find it rewarding to also help other teachers when planning their next lesson.  Within our lessons you will find great resources for tapping into our great young minds.  The lessons available cover courses .. to .. and content is constantly added.</p>
+                            <br>
+                            <p>I have been teaching for over 10 years and have developed great lessons that I would love to share.  My hope is that all teachers can benefit from all the lessons put together here and that they can be used to teach and grow young minds.  </p>
                             <br>
                             Mrs. Daniela
                             <br>
                             Principal
-                        </div>
-                        <!-- <div class="col-lg-4">
-                            <img id = "danipic" src="assets/img/daniela.jpg">
-                            <br>
-                            Mrs. Daniela
-                            <br>
-                            Principal
-                        </div> -->
                     </div></div></div><br>
                     </div>
                 </div>
