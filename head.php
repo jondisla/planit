@@ -14,5 +14,5 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-  </head>
-  <body>
+</head>
+  <body style="font-family: 'Mali', cursive;">

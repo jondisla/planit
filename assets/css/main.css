@@ -1,7 +1,6 @@
 body,
 html {
     height: 100%;
-    font-family: 'Mali', cursive;
 
 }
 
@@ -9,10 +8,6 @@ html {
     width: 70px;
 }
 
-.nav-link a {
-    font-family: 'Mali', cursive;
-
-}
 
 .navbar {
     background-color: #e3f2fd;

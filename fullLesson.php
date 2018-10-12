@@ -19,6 +19,7 @@ include ("functions.php");
         font-size:20px;
     }
     .content{
+        font-family: sans-serif;
             margin-top:130px;
             /* height:700px; */
         }

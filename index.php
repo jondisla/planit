@@ -11,17 +11,22 @@ include ("functions.php");
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height:50%;
+  height:70%;
         }
         a,
         a:hover{
             text-decoration:none;
             color:#363A3E;
         }
-        p,
-        .content{
+        p{
+            font-size:20px;
+        }
+        .content,
+        body{
             font-family: 'Mali', cursive;
-  
+        }
+        .sidemenu{
+            margin-top:55px;
         }
         #danipic{
             width:100px;
@@ -75,7 +80,7 @@ include ("functions.php");
     <div class="content" style="margin-bottom:30px;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 sidemenu">
                 <a href= "body_find.php">
                     <div class="card lesson side-menu-card lesson-button">
                         <!-- <img class="card-img-top" src="assets/img/apple.png" alt=""> -->
@@ -109,8 +114,8 @@ include ("functions.php");
                     <div class="col-lg-8" >
                     <div class="blogpost">
                     <div class="card-body">
-                        <blockquote class="blockquote"><h3>Bienvenidos</h3>
-                    </blockquote>
+                        <center><blockquote class="blockquote"><h3>Bienvenidos</h3>
+                    </blockquote></center>
                     
                     <img id = "danipic" src="assets/img/daniela.jpg" align="left" hspace = "20"><p>Planit was started by an elementary school principal that loves to help minds grow.  We have a passion for planning and find it rewarding to also help other teachers when planning their next lesson.  Within our lessons you will find great resources for tapping into our great young minds.  The lessons available cover courses .. to .. and content is constantly added.</p>
                             <br>
