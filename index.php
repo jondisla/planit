@@ -114,7 +114,7 @@ include ("functions.php");
                         </div>
                     </div>
                     </a>
-                    <a href="forum.php">
+                    <!-- <a href="forum.php">
                     <div class="card lesson side-menu-card">
                         <i class="fas fa-chalkboard-teacher side-menu-icons"></i>
                         <div class="card-body">
@@ -122,7 +122,7 @@ include ("functions.php");
                             <p class="card-text"></p>
                         </div>
                     </div>
-                    </a>
+                    </a> -->
                 </div>
                     <div class="col-lg-8" >
                     <div class="blogpost">
