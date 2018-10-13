@@ -7,11 +7,11 @@ include ("functions.php");
 <style>
         .content{
             background: url("assets/img/b1.jpg") no-repeat center center ; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height:70%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height:70%;
         }
         a,
         a:hover{
@@ -30,6 +30,19 @@ include ("functions.php");
         }
         #danipic{
             width:100px;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .content{
+                height:100%;
+            }
+            .sidemenu{
+                display:none;
+            }
+            .blogpost{
+                position:absolute;
+                height:100%;
+            }
         }
     </style>
 
@@ -77,7 +90,7 @@ include ("functions.php");
     </div>
     <br>
     <!--SIDE MENU -->
-    <div class="content" style="margin-bottom:30px;">
+    <div class="content"  style="margin-bottom:30px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 sidemenu">
@@ -118,8 +131,6 @@ include ("functions.php");
                     </blockquote></center>
                     
                     <img id = "danipic" src="assets/img/daniela.jpg" align="left" hspace = "20"><p>Planit was started by an elementary school principal that loves to help minds grow.  We have a passion for planning and find it rewarding to also help other teachers when planning their next lesson.  Within our lessons you will find great resources for tapping into our great young minds.  The lessons available cover courses .. to .. and content is constantly added.</p>
-                            <br>
-                            <p>I have been teaching for over 10 years and have developed great lessons that I would love to share.  My hope is that all teachers can benefit from all the lessons put together here and that they can be used to teach and grow young minds.  </p>
                             <br>
                             Mrs. Daniela
                             <br>

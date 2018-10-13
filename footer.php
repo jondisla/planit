@@ -1,10 +1,18 @@
 <style>
     #stickyFooter{
         position:absolute;
-        /* bottom:0; */
-        width:100%;  
+        /* bottom:0;  */
         background:#E33B37;
     }
+    @media only screen and (max-width: 700px) {
+        #stickyFooter{
+            position:relative;
+            /* bottom:0; */
+            width:100%;
+            height:60px;   /* Height of the footer */
+
+    }
+}
 </style>
 <footer class="container-fluid w-100 text-light py-3" id = "stickyFooter" >
      <center>Copyright&copy; 2018 PlanIt.com</center>
